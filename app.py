@@ -252,13 +252,13 @@ st.components.v1.html(combined_html, height=1700, scrolling=True)
 
 st.markdown(" Lectue 1 ")
 
-st.image("5ring.png", caption="Lecture 1", use_column_width=True)
+st.image("5ring.png", caption="Lecture 1", use_container_width=True)
 
 st.markdown(" Lectue 2 ")
 
-st.image("6ring.png", caption="Lectur 2", use_column_width=True)
+st.image("6ring.png", caption="Lectur 2", use_container_width=True)
 
 st.markdown(" Lectue 3 & 4 ")
 
-st.image("Lec3-4.png", caption="Lectur 2", use_column_width=True)
+st.image("Lec3-4.png", caption="Lectur 2", use_container_width=True)
 
