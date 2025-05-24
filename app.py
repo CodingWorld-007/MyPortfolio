@@ -262,7 +262,7 @@ st.markdown(" Lectue 3 & 4 ")
 
 st.image("Lec3-4.png", caption="Lectur 2", use_container_width=True)
 
-# --- VIDEO BLOCK 2: 5 Ring Theory ---
+# --- VIDEO BLOCK 3: COMPLETE SEMESTER ---
 video_block_3 = """
 <div class="card">
   <div class="video-title">🎥 FINAL CONCLUSION VIDEO</div>
@@ -274,8 +274,3 @@ video_block_3 = """
 
 combined_html = video_styles + video_block_3
 st.components.v1.html(combined_html, height=1700, scrolling=True)
-
-st.markdown(" About Lectue 3 & 4 ")
-
-st.image("Lec3-4.png", caption="Lectur 3 & 4", use_container_width=True)
-
