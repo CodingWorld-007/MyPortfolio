@@ -19,7 +19,6 @@ SOCIAL_MEDIA = {
     "YouTube ▶️": "https://youtube.com/@codingworld_official",
     "LinkedIn 🔗": "https://linkedin.com/in/amanajjoshi",
     "GitHub 💻": "https://github.com/CodingWorld-007",
-    "Instagram 🌐": "https://www.instagram.com/codingworld_official",
 }
 
 AWARDS = {
@@ -117,16 +116,28 @@ st.markdown("""
 - Grade: 8.27 CGPA
 """)
 
-# --- EXPERIENCE ---
+# --- EXPERIENCE --- 
 st.write('\n')
 st.subheader("Experience")
 st.write("---")
+
+st.markdown("""
+**Software Developer Intern - TBI** [📄 View Certificate](https://drive.google.com/file/d/1N8sl9BmdMgJnzMbQ-4QjIbxESmMTtTJb/view?usp=sharing) 
+  
+- GEU · Part-Time  
+- Nov 2024 - Feb 2025  
+- India · Remote
+""")
+
+st.write('\n')
+
 st.markdown("""
 **YouTuber - CODING WORLD**  
 - YouTube · Part-Time  
 - Jun 2023 - Present  
 - India · Remote
 """)
+
 
 # --- ACHIEVEMENTS & AWARDS ---
 st.write('\n')
@@ -146,4 +157,108 @@ for title, link in PROJECTS.items():
         st.markdown(f"[{title}]({link})")
     else:
         st.markdown(f"**{title}** *(Coming Soon)*")
+
+st.markdown("## 📘 PESE Assignment")
+
+# --- STYLES ---
+video_styles = """
+<style>
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  }
+  .video-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f4e79;
+    margin-bottom: 10px;
+  }
+  .review-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 20px;
+  }
+  .review-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  .responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .responsive-video iframe,
+  .responsive-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+</style>
+"""
+
+# --- VIDEO BLOCK 1: 6 Ring Theory ---
+video_block_1 = """
+<div class="card">
+  <div class="video-title">🎥 Introduction Based on 6 Ring Theory</div>
+  <div class="responsive-video">
+    <iframe src="https://drive.google.com/file/d/1xAIIXlrfPzqSwgh7SCT7ku5trSRt1N1B/preview" allow="autoplay"></iframe>
+  </div>
+</div>
+"""
+
+# --- VIDEO BLOCK 2: 5 Ring Theory ---
+video_block_2 = """
+<div class="card">
+  <div class="video-title">🎥 Introduction Based on 5 Ring Theory</div>
+  <div class="responsive-video">
+    <iframe src="https://drive.google.com/file/d/1DSY40zdqZ9Qlntv0cZV4-wTmlJrJYE7b/preview" allow="autoplay"></iframe>
+  </div>
+</div>
+"""
+
+# --- MOVIE REVIEW BLOCK ---
+review_block = """
+<div class="card">
+  <div class="review-title">🎬 Movie Review: <em>The Maze Runner</em></div>
+  <div class="review-text">
+    <strong>Plot:</strong> The Maze Runner is a gripping sci-fi thriller based on the best-selling novel by James Dashner.
+    The movie follows Thomas (Dylan O’Brien), who wakes up in a mysterious, enclosed area called the Glade with no memory of his past.
+    He soon discovers that he, along with other young men, is trapped within a giant maze filled with deadly creatures known as Grievers.
+    As Thomas begins to question their reality, he teams up with fellow Gladers to find a way out before time runs out.
+    <br><br>
+    <strong>Review:</strong> The Maze Runner is an exciting sci-fi adventure that delivers non-stop action and suspense.
+    While it doesn’t answer all the questions it raises, it keeps audiences hooked and eager for the next installment.
+    If you enjoy dystopian thrillers like The Hunger Games, this is definitely worth watching!
+  </div>
+</div>
+"""
+
+# --- COMBINE AND RENDER ALL HTML BLOCKS ---
+combined_html = video_styles + video_block_1 + video_block_2 + review_block
+st.components.v1.html(combined_html, height=1700, scrolling=True)
+
+st.markdown(" Lectue 1 ")
+
+st.image("5ring.png", caption="Lecture 1", use_column_width=True)
+
+st.markdown(" Lectue 2 ")
+
+st.image("6ring.png", caption="Lectur 2", use_column_width=True)
+
+st.markdown(" Lectue 3 & 4 ")
+
+st.image("Lec3-4.png", caption="Lectur 2", use_column_width=True)
 
