@@ -122,7 +122,7 @@ st.subheader("Experience")
 st.write("---")
 
 st.markdown("""
-**Software Developer Intern - TBI** [📄 View Certificate](https://drive.google.com/file/d/1N8sl9BmdMgJnzMbQ-4QjIbxESmMTtTJb/view?usp=sharing) 
+**Software Developer Intern - TBI** [📄 View Certificate](https://drive.google.com/file/d/1N8sl9BmdMgJnzMbQ-4QjIbxESmMTtTJb/preview) 
   
 - GEU · Part-Time  
 - Nov 2024 - Feb 2025  
@@ -250,13 +250,30 @@ review_block = """
 combined_html = video_styles + video_block_1 + video_block_2 + review_block
 st.components.v1.html(combined_html, height=1700, scrolling=True)
 
-st.markdown(" About Lectue 1 ")
+st.markdown(" Lectue 1 ")
 
 st.image("5ring.png", caption="Lecture 1", use_container_width=True)
 
-st.markdown(" About Lectue 2 ")
+st.markdown(" Lectue 2 ")
 
 st.image("6ring.png", caption="Lectur 2", use_container_width=True)
+
+st.markdown(" Lectue 3 & 4 ")
+
+st.image("Lec3-4.png", caption="Lectur 2", use_container_width=True)
+
+# --- VIDEO BLOCK 2: 5 Ring Theory ---
+video_block_3 = """
+<div class="card">
+  <div class="video-title">🎥 FINAL CONCLUSION VIDEO</div>
+  <div class="responsive-video">
+    <iframe src="https://drive.google.com/file/d/1BcvwS7p3MGjL9_ELbBS9mrYwuyJRpyjU/preview" allow="autoplay"></iframe>
+  </div>
+</div>
+"""
+
+combined_html = video_styles + video_block_3
+st.components.v1.html(combined_html, height=1700, scrolling=True)
 
 st.markdown(" About Lectue 3 & 4 ")
 
